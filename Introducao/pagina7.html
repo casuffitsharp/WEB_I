@@ -71,18 +71,18 @@
 
     function retTab1() {
         var vetPessoas = JSON.parse(localStorage.getItem("tabela"));
-        document.getElementById("mensagem").innerHTML =
+        document.getElementById("mensagem").textContent =
             vetPessoas[1].codigo+" - "+vetPessoas[1].nome;
     }
     function retNmPessoa() {
         var vPessoa = JSON.parse(localStorage.getItem("pessoa"));
-        document.getElementById("mensagem").innerHTML =
+        document.getElementById("mensagem").textContent =
             vPessoa.nome;
     }
     function retornaIdade() {
-        document.getElementById("mensagem").innerHTML =
+        document.getElementById("mensagem").textContent =
           localStorage.getItem("idade");
     }
-    document.getElementById("div1").innerHTML = document.cookie;
+    document.getElementById("div1").textContent = document.cookie;
 </script>
 </html>
